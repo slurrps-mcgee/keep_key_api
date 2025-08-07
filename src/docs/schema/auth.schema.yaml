@@ -1,0 +1,31 @@
+components: 
+    schemas:
+        signup:
+            type: object
+            required: 
+                - email
+                - password
+                - salt
+            properties:                  
+                email:
+                    type: string
+                    example: email@example.com
+                password:
+                    type: string
+                    example: Password1!
+                salt: 
+                    type: string
+                    example: salt   
+
+        signin:
+            type: object
+            required:
+                - email
+                - password
+            properties:
+                email:
+                    type: string
+                    example: email@example.com
+                password:
+                    type: string
+                    example: Password1!
